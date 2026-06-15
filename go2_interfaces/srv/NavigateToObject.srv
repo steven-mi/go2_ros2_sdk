@@ -1,0 +1,7 @@
+# Navigate to the best visible instance of a detected object class.
+string class_id
+float64 standoff_distance
+---
+bool success
+string message
+geometry_msgs/PoseStamped goal_pose

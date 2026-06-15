@@ -1,0 +1,6 @@
+# List currently visible detected objects localized in the map frame.
+---
+string[] class_ids
+float64[] scores
+geometry_msgs/Point[] positions
+bool[] localized

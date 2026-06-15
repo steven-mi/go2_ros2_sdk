@@ -1,0 +1,29 @@
+detection_navigator:
+  ros__parameters:
+    map_frame: map
+    camera_frame: front_camera
+    robot_base_frame: base_link
+    pointcloud_frame: odom
+    detection_topic: /detected_objects
+    camera_info_topic: /camera/camera_info
+    pointcloud_topic: /pointcloud/filtered
+    min_detection_score: 0.6
+    standoff_distance: 1.0
+    bbox_padding_ratio: 0.12
+    max_pointcloud_points: 40000
+    target_classes:
+      - person
+      - chair
+      - couch
+      - bed
+      - dining table
+    avoid_classes:
+      - person
+      - chair
+      - couch
+      - bed
+      - dining table
+      - bench
+    semantic_obstacle_radius: 0.35
+    publish_semantic_scan: true
+    semantic_scan_rate: 5.0
